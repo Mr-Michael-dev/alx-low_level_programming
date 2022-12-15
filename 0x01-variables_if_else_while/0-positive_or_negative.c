@@ -19,11 +19,11 @@ int main()
 	 * if the number is less than 0
 	 */
 	int n=2;
-	if (n>0);
+	if (n>0)
 {
 	printf("is positive %d", n);
 }
-else if (n==0);
+else if (n==0)
 {
 	printf("is zero %d", n);
 }
