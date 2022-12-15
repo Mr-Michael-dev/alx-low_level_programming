@@ -1,5 +1,5 @@
 #include<stdio.h>
-init main()
+int main()
 	/** The variable n will store a different value every time you will run this program
 	 * 
 	 * The output of the program should be:
@@ -18,12 +18,12 @@ init main()
 	 *
 	 * if the number is less than 0
 	 */
-	init n=2;
-	if (n>0)
+	int n=2;
+	if (n>0);
 {
 	printf("is positive %d", n);
 }
-else if (n==0)
+else if (n==0);
 {
 	printf("is zero %d", n);
 }
