@@ -1,5 +1,6 @@
-#include<stdio.h>
-int main()
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 	/** The variable n will store a different value every time you will run this program
 	 * 
 	 * The output of the program should be:
@@ -18,18 +19,17 @@ int main()
 	 *
 	 * if the number is less than 0
 	 */
-	int n=2;
-	if ( n > 0 )
+int main(void)
 {
-	printf( "is positive %d", n );
-}
-else if ( n == 0 )
-{
-	printf( "is zero %d", n );
-}
-else
-{
-	printf( "is negative %d", n );	
-}
-return 0;
+	int n;
+	
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf( "is positive %d"\n, n );
+	else if (n < 0)
+		printf( "is negative %d"\n, n );
+	else
+		printf( "is zero %d"\n, n );
+	return (0);
 }
