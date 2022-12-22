@@ -1,6 +1,9 @@
 #include "main.h"
 
 /**
+ *
+ * print_alphabet_x10, use only user defined variables
+ *
  * Discription:  print list of alphabets 10 times
  *
  * Return: 0
