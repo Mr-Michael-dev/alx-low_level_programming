@@ -21,9 +21,8 @@ int main(void)
 	if (q != 'q' && q != 'e')
 {
 	putchar(q);
-
-	q++;
 }
+	q++;
 }
 	putchar('\n');
 	return (0);
