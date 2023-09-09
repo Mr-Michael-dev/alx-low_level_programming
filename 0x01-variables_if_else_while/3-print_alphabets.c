@@ -16,7 +16,15 @@ int main(void)
 
 	alpha = 'a';
 
-	while (alpha <= 'z')
+	while (alpha <= 'Z')
+{
+	putchar(alpha);
+
+	alpha++;
+}
+	alpha = 'A';
+
+	while (alpha <= 'Z')
 {
 	putchar(alpha);
 
