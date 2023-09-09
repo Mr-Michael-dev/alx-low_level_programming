@@ -5,7 +5,7 @@
  * @num is a variable of type int
  *
  * Description: This program prints single digit numbers of base 10
- * start from 0 and return a new line
+ * start from 0 using put char and return a new line
  *
  * Return: Always 0 (exit the program)
  */
