@@ -2,7 +2,7 @@
 
 /**
  * _islower - function entry point
- * @c is a parameter of type int
+ * @c: The character to be checked
  *
  * Description: checks for lowercase character
  *
