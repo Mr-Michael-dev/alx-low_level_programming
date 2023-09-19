@@ -16,4 +16,8 @@ void _puts(char *str);
 void print_rev(char *s);
 
 void print_array(int *a, int n);
+
+void rev_string(char *s);
+
+
 #endif /* MAIN_H */
