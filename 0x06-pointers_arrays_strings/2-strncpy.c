@@ -25,6 +25,8 @@ char *_strncpy(char *dest, char *src, int n)
 	if (nBytes < 0)
 	{
 	*dest = '\0';
+	dest++;
+	nBytes++;
 	}
 
 	return (copy);
