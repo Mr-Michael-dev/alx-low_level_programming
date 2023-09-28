@@ -11,11 +11,11 @@ int factorial(int n)
 {
 	int facto;
 
-	if(n < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	if(n == 0)
+	if (n == 0)
 	{
 		return (1);
 	}
