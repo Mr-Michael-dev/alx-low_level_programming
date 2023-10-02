@@ -2,16 +2,16 @@
 
 /**
  * main - prints the program's name followed by a new line
- * @argc: nunber of arguments
- * @argv: array of arguments
+ * @ac: nunber of arguments
+ * @av: array of arguments
  *
  * Return: 0 always
  */
 
-int main(int argc, char *argv[])
+int main(int ac, char *av[])
 {
-	(void)argc;
-	printf("%s \n", argv[0]);
+	(void)ac;
+	printf("%s \n", av[0]);
 
 	return (0);
 }
