@@ -21,18 +21,22 @@ int **alloc_grid(int width, int height)
 	}
 
 	two_d_array = (int **)malloc(sizeof(int *) * height);
-	
+
 	if (two_d_array == NULL)
 	{
 		return (NULL);
 	}
-	
 
 	for (i = 0; i < height; i++)
 	{
 		two_d_array[i] = (int *)malloc(sizeof(int) * width);
 		if (two_d_array[i] == NULL)
 		{
+			for (j = 0; j <i; j++)
+			{
+				free(two_d_array[j]);
+			}
+			free(two_d_array);
 			return (NULL);
 		}
 
