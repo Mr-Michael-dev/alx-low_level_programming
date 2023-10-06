@@ -2,12 +2,12 @@
 #include <string.h>
 
 /**
- * string_nconcat - alloctaes space in memory which contains concatenated string
+ * string_nconcat - alloctaes space in memory containing concatenated string
  * @s1: string to be concatenated
  * @s2: string to be concatenated
  * @n: number of string to be concatenated
  *
- * Return: pointer to newly allocated space
+ * Return: pointer to newly allocated space which contains s1 and s2
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -41,6 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			strncat(strNew, s2, n);
 		}
 	}
+
 
 	return (strNew);
 }
