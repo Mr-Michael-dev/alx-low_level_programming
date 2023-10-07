@@ -35,10 +35,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (n >= length2)
 		{
-			strncat(strNew, s2, length2);
+			if (strncat(strNew, s2, length2) == NULL)
+			{
+				return (NULL);
+			}
 		} else
 		{
-			strncat(strNew, s2, n);
+			if (strncat(strNew, s2, n) == NULL)
+			{
+				return (NULL);
+			}
 		}
 	}
 
