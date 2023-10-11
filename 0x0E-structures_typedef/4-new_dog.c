@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <strings.h>
 
 /**
  * new_dog - creates a new dog of type dog_t
@@ -23,9 +22,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 	}
 
-	new_dog->name = strdup(name);
+	new_dog->name = name;
 	new_dog->age = age;
-	new_dog->owner  = strdup(owner);
+	new_dog->owner  = owner;
 
 	return (new_dog);
 }
