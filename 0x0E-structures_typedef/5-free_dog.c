@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_doy - frees allocated memory
+ * free_dog - frees allocated memory
  * @d: pointer to the memory to be freed
  *
  * Return: void
