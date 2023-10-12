@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * int-index - searches for an integer
+ * int_index - searches for an integer
  * @array: array to interate over
  * @size: size of the array
  * @cmp: funtion pointer(compares integers)
@@ -20,11 +20,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		if (!(*cmp)(array[i]))
+		if ((*cmp)(array[i]) != 0)
 		{
-			return (-1);
+			return (i);
 		}
 	}
 
-	return (i);
+	return (-1);
 }
