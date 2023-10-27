@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * set_bit - sets the bit of a value at given index to 1
+ * clear_bit - sets the bit of a value at given index to 0
  * @n: value
  * @index: index
  *
  * Return: 1 if success or -1 if fail
  */
 
-
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int mask = 1UL << index;
 
@@ -18,7 +17,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	}
 
-	*n = *n | mask;
+	*n = *n & ~mask;
 	return (1);
 }
 
