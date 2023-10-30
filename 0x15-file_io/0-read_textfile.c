@@ -1,5 +1,7 @@
 #include "main.h"
 
+ssize_t read_textfile(const char *filename, size_t letters);
+
 /**
  * read_textfile - reads a text file and print to stdout
  * @filename: file to be read
