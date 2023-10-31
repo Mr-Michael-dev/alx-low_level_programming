@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * append_text_file - appends text at end of a file
+ * append_text_to_file - appends text at end of a file
  * @filename: file to be append text
  * @text_content: text to append
  *
