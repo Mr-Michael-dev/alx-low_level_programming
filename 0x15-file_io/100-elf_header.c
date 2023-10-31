@@ -1,6 +1,9 @@
+#include <stdbool.h>
 #include "main.h"
 #include <elf.h>
 
+
+bool is_elf_file(Elf64_Ehdr elf_header);
 void display_elf_header(Elf64_Ehdr elf_header);
 
 #define ELF_HEADER_SIZE 52
@@ -8,6 +11,7 @@ void display_elf_header(Elf64_Ehdr elf_header);
 int main(int argc, char *argv[])
 {
 	int fd;
+	Elf64_Ehdr elf_header;
 	
 	if (argc != 2)
 	{
@@ -20,7 +24,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error opening file: %s\n", argv[1]);
 		exit(98);
 	}
-	Elf64_Ehdr elf_header;
+	
 	lseek(fd, 0, SEEK_SET);
 	read(fd, &elf_header, ELF_HEADER_SIZE);
 
