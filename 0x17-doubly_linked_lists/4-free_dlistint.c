@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * free_dlistint - frees a dlistint_t list
@@ -8,9 +9,12 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	for (; head != NULL; head = head->next)
+	dlistint_t *temp;
+
+	while (head != NULL)
 	{
-		free(head->next);
+		temp = head->next;  // Store the next node before freeing the current one
+		free(head);
+		head = temp;  // Move to the next node
 	}
-	free(head);
 }
