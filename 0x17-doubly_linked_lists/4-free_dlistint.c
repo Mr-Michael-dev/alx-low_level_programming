@@ -13,8 +13,8 @@ void free_dlistint(dlistint_t *head)
 
 	while (head != NULL)
 	{
-		temp = head->next;  // Store the next node before freeing the current one
+		temp = head->next;
 		free(head);
-		head = temp;  // Move to the next node
+		head = temp;
 	}
 }
