@@ -8,7 +8,7 @@
  * Return: The division
  */
 
-int div(int a, int b)
+int _div(int a, int b)
 {
 	return (a / b);
 }
